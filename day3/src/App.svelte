@@ -80,7 +80,11 @@
 </style>
 
 <script>
-  import LeftMenu from './components/LeftMenu/LeftMenu.svelte'
+  import LeftMenu from './components/LeftMenu/Leftmenu.svelte'
+  import Task from './components/Task/Task.svelte'
+  import TaskCard from './components/TaskCard/TaskCard.svelte'
+  import TaskFrame from './components/TaskFrame/TaskFrame.svelte'
+
   let actionItems = [
     { src: 'svg/inbox.svg', alt: 'Inbox', description: 'Inbox' },
     { src: 'svg/star.svg', alt: 'Today', description: 'Today' },
@@ -102,6 +106,7 @@
   <body>
     <div class="task-manager">
       <LeftMenu {actionItems} {categoryItems} />
+      <TaskFrame />
     </div>
   </body>
 </html>

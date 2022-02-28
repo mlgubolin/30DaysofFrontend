@@ -1,4 +1,10 @@
 <style>
+  .left-bar {
+    background-color: var(--bg-color);
+    width: 230px;
+    border-right: 1px solid #e3e7f7;
+    position: relative;
+  }
   ul {
     list-style-type: none;
     padding: 0;
@@ -38,12 +44,12 @@
 </script>
 
 <div class="left-bar">
-  <div class="upper-part">
+  <!-- <div class="upper-part">
     <div class="actions">
       <div class="circle" />
       <div class="circle-2" />
     </div>
-  </div>
+  </div> -->
 
   <div class="left-content">
     <ul class="action-list">
