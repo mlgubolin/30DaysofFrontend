@@ -2,6 +2,7 @@
   .task-frame {
     display: flex;
     flex-direction: column;
+    overflow: auto;
     flex-grow: 1;
     padding: 40px 20px 0 20px;
   }
@@ -28,6 +29,8 @@
 </style>
 
 <script>
+  import Task from '../Task/Task.svelte'
+
   import TaskCard from '../TaskCard/TaskCard.svelte'
 
   let todayTasks = [
@@ -60,9 +63,17 @@
     <span>Notes</span>
     <span>Links</span>
   </div>
-  <TaskCard tasks={todayTasks} />
+  <div class="task-wrapper">
+    {#each todayTasks as { title, url, tag, checked }}
+      <Task {title} {url} {tag} {checked} />
+    {/each}
+  </div>
 
   <p>Upcoming Tasks</p>
   <div class="tabs" />
-  <TaskCard tasks={upcomingTasks} />
+  <div class="task-wrapper">
+    {#each upcomingTasks as { title, url, tag, checked }}
+      <Task {title} {url} {tag} {checked} />
+    {/each}
+  </div>
 </div>

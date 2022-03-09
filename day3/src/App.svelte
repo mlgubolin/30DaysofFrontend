@@ -81,6 +81,7 @@
 
 <script>
   import LeftMenu from './components/LeftMenu/Leftmenu.svelte'
+  import RightMenu from './components/RightMenu/RightMenu.svelte'
   import Task from './components/Task/Task.svelte'
   import TaskCard from './components/TaskCard/TaskCard.svelte'
   import TaskFrame from './components/TaskFrame/TaskFrame.svelte'
@@ -107,6 +108,7 @@
     <div class="task-manager">
       <LeftMenu {actionItems} {categoryItems} />
       <TaskFrame />
+      <RightMenu />
     </div>
   </body>
 </html>

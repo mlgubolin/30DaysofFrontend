@@ -2,20 +2,22 @@
   a {
     display: flex;
     position: relative;
-    justify-content: space-between;
-    margin-bottom: 16px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
     padding-left: 30px;
     color: var(--task-color);
     font-size: 13px;
     font-weight: 500;
   }
+  input {
+    height: 18px;
+  }
   label {
-    margin-right: 40px;
+    margin: 0 40px 0 12px;
   }
   span {
-    display: flex;
     font-size: 10px;
-    padding: 4px 8px;
+    padding: 5px 8px;
     border-radius: 20px;
   }
   span.Approved {
